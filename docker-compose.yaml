@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  web:
+    build: ./web
+    container_name: web_c
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./web/src:/app/web/src
+      - ./web/public:/app/web/public
